@@ -1,0 +1,28 @@
+summary:
+
+index.html
+style.css
+script.js
+data.json
+stock.json
+logs.json
+
+Info:
+
+Payment through sellauth
+Receive code
+Redeem on website
+Send info with a webhook of 
+ -> email, pass, invite link, country
+Save in logs.json
+ -> code: [email, pass, link, country]
+
+Tool:
+
+Linked to github
+1) make codes + url + country
+ -> input int for numbers of codes and int/5 for number of links 
+ -> add in stock.json codes: [every codes], links: [every links × 5], country: [every country ×5]
+2) code checker (str: code)
+ -> check in stock.json code if it exists
+ -> check in logs.json if there is a log

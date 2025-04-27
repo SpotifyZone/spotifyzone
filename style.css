@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #0a0a0a url('background-stars.png') no-repeat center center;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    min-height: 100vh;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 2px solid #ee00ff;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .highlight {
+    color: #ee00ff;
+  }
+  
+  .discord-button {
+    background: none;
+    border: 2px solid #ee00ff;
+    color: #ee00ff;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .discord-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  
+  .main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+    padding: 1rem;
+  }
+  
+  .card {
+    background: #1c1c1c;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(200, 0, 255, 0.5);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .card hr {
+    margin-bottom: 1.5rem;
+    border: none;
+    height: 2px;
+    background: #ee00ff;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 8px;
+    background: #2e2e2e;
+    color: white;
+    font-size: 1rem;
+  }
+  
+  .credentials-label {
+    font-weight: bold;
+    color: #ee00ff;
+    margin: 1rem 0 0.5rem;
+  }
+  
+  /* Input fields focus animation */
+form input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 8px;
+    background: #2e2e2e;
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  form input:focus {
+    outline: none;
+    box-shadow: 0 0 10px #ee00ff, 0 0 5px #ee00ff;
+    background: #3a3a3a;
+  }
+  
+  /* Submit button hover animation */
+  .submit-button {
+    background: #ee00ff;
+    color: #1c1c1c;
+    border: none;
+    padding: 0.8rem;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background: #ee00ff;
+    transform: scale(1.05);
+    box-shadow: 0 0 5px #ee00ff;
+  }
+  
+  
+  .footer {
+    background-color: #0a0a0a;
+    border-top: 2px solid #ee00ff;
+    padding: 1rem 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-top: 2rem;
+  }
+  
+  .discord-footer-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #ee00ff;
+    text-decoration: none;
+    margin-top: 0.5rem;
+  }
+  
+  .discord-footer-link:hover {
+    text-decoration: underline;
+  }
+  
+  .discord-footer-icon {
+    width: 18px;
+    height: 18px;
+  }
+  
