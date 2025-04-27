@@ -21,6 +21,8 @@
   }
   
   .logo {
+    color: azure;
+    text-decoration: none;
     font-size: 1.8rem;
     font-weight: bold;
   }
@@ -52,9 +54,22 @@
   .main-content {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     height: calc(100vh - 80px);
     padding: 1rem;
+  }
+
+  .valid-message {
+    color: aliceblue;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 1rem;
+    margin: 30px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
   }
   
   .card {
@@ -94,19 +109,6 @@
     font-weight: bold;
     color: #ee00ff;
     margin: 1rem 0 0.5rem;
-  }
-  
-  /* Input fields focus animation */
-form input {
-    width: 100%;
-    padding: 0.8rem;
-    margin-bottom: 1rem;
-    border: none;
-    border-radius: 8px;
-    background: #2e2e2e;
-    color: white;
-    font-size: 1rem;
-    transition: all 0.3s ease;
   }
   
   form input:focus {
@@ -161,5 +163,14 @@ form input {
   .discord-footer-icon {
     width: 18px;
     height: 18px;
+  }
+  
+  @media (max-width: 400px) {
+    .main-content {
+      padding: 0.5rem;
+    }
+    .card {
+      padding: 1rem;
+    }
   }
   
