@@ -31,7 +31,7 @@
     color: #ee00ff;
   }
   
-  .discord-button {
+  .contact-button {
     background: none;
     border: 2px solid #ee00ff;
     color: #ee00ff;
@@ -45,7 +45,7 @@
     gap: 0.5rem;
   }
   
-  .discord-icon {
+  .icon {
     width: 20px;
     height: 20px;
   }
