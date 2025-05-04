@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Vérification du code
       if (stock.codes.includes(code)) {
-        const webhookUrl = "https://discord.com/api/webhooks/1368672554839052430/gZIrVyHNzVjERblca6G4VkOCaWXtGGfBoaq10tyyiq4JVV8P4oFligCcm0CHNncP8Xvg";
+        const webhookUrl = "https://discord.com/api/webhooks/1368674757909942552/1ooO_OSOi9RBHv6gqKuXojLWMBeXT7yxdj2g7zBHI2tzM6CfHO3XUFamGkjSr5G9JIQq";
         
         const payload = {
           embeds: [{
