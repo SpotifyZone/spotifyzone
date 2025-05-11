@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SpotifyZone</title>
+  <title>UpgradeZone</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="header">
-    <a href="index.html" class="logo"> SPOTIFY <span class="highlight">ZONE</span></a>
+    <a href="index.html" class="logo"> UPGRADE <span class="highlight">ZONE</span></a>
     <div class="button-div">
       <a href="https://discord.gg/wpB3QnrqXY" class="contact-button">
           <img src="https://cdn-icons-png.flaticon.com/512/4945/4945973.png" alt="Discord" class="icon">
@@ -25,19 +25,25 @@
     <div id="message" class="valid-message"></div>
 
     <section class="card">
-      <h2>REDEEM YOUR SUBSCRIPTION</h2>
+      <select id="service-select" class="service-select">
+        <option value="spotify">Spotify</option>
+        <option value="youtube">YouTube</option>
+      </select>
+    
+      <h2 id="form-title">REDEEM YOUR SPOTIFY SUBSCRIPTION</h2>
       <hr>
       <form>
         <input type="text" placeholder="XXXX-XXXX-XXXX-XXXX" required>
-        <div class="credentials-label">Spotify Credentials</div>
+        <div class="credentials-label" id="credentials-label">Spotify Credentials</div>
         <input type="text" placeholder="Email" required>
         <input type="text" placeholder="Password" required>
         <button type="submit" class="submit-button">Submit</button>
       </form>
     </section>
+    
   </main>
   <footer class="footer">
-    <p>© 2025 SpotifyZone. All rights reserved.</p>
+    <p>© 2025 UpgradeZone. All rights reserved.</p>
     <a href="https://discord.gg/wpB3QnrqXY" class="discord-footer-link">
       <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord" class="discord-footer-icon">
       Join our discord server for support
